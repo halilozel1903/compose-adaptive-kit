@@ -34,6 +34,7 @@ import androidx.compose.ui.unit.sp
  * Larger windows get a margin around the panes and keep them out of the system bars; on phones the panes are
  * full bleed and handle the status bar themselves.
  */
+@Composable
 fun Modifier.screenPadding(compact: Boolean): Modifier =
     if (compact) {
         this
